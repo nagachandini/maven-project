@@ -195,9 +195,15 @@
         <artifactId>hamcrest-library</artifactId>
         <version>1.2.1</version>
         <scope>test</scope>
-      </dependency>
-
-      <dependency>
+             </dependency>
+     
+    <dependency>
+    <groupId>org.ow2.asm</groupId>
+    <artifactId>asm-commons</artifactId>
+     <version>5.0.3</version>
+             </dependency>
+             
+         <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>1.8.5</version>
