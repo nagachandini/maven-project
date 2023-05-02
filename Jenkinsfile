@@ -31,7 +31,7 @@ pipeline {
 
     stage('sonar-qualitychecks') {
       steps {
-        sh 'mvn sonar:sonar'
+        sh 'sudo mvn sonar:sonar'
       }
     }
 
