@@ -13,8 +13,19 @@ pipeline {
     }
 
     stage('maven-build') {
-      steps {
-        sh 'mvn clean install'
+      parallel {
+        stage('maven-build') {
+          steps {
+            sh 'mvn clean install'
+          }
+        }
+
+        stage('maven validate') {
+          steps {
+            sh 'mvn validate'
+          }
+        }
+
       }
     }
 
