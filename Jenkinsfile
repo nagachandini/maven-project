@@ -29,5 +29,11 @@ pipeline {
       }
     }
 
+    stage('sonar-qualitychecks') {
+      steps {
+        sh 'mvn sonar:sonar'
+      }
+    }
+
   }
 }
