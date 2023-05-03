@@ -22,6 +22,18 @@
   </modules>
 
   <distributionManagement>
+       <repository>
+                <id>deployment</id>
+                <name>Internal Releases</name>
+                <url>http://http://10.128.0.10:8081/repository-rel/</url>
+           </repository>
+           <snapchatRepository>
+                    <id>deployment</id>
+                    <name>Internal Snapchat Release</name>
+                    <url>http://3.111.147.244:8081/repository/maven-snapchats/</url>
+           </snapchatRepository>
+         </distributionManagement>
+     <distributionManagement>
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
